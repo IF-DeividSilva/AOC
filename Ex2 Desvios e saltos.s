@@ -1,7 +1,6 @@
 # Faça um programa, em assembly do mips, que receba um valor inteiro do teclado, se esse valor
 # for igual a 10 imprima-o na tela e saia do programa. Senão imprima 0 e saia do programa.
 .data
-
 prompt: .asciiz "Digite um num int: "
 
 .text
@@ -19,6 +18,12 @@ main:
 
     # comparacao
     beq $v0, 10, printa # se for igual printa
+
+    # imprime valor
+    li $t0, 0
+    li $v0, 1
+    add $a0, $zero, $t0
+    syscall
     j sair  # se for diferente sai
 
 printa: 
@@ -29,12 +34,6 @@ printa:
     syscall
 
 sair:
-    # imprime valor (Só pra teste)
-    li $t0, -1
-    li $v0, 1
-    add $a0, $zero, $t0
-    syscall
-
     #finaliza o programa
     li $v0, 10
     syscall
