@@ -1,0 +1,31 @@
+Traduza as seguintes instruções para  binário e depois para hexadecimal.
+
+a) add $t0, $t1, $t2
+b) addi $t0, $zero, 20
+c) sll $t0, $t0, 2
+d) beq $zero, $t3, 100
+e) j 200
+
+ (opcode)  (rs - $t1 )  (rt - $t2) (rd - $t0) (shamt)   (funct -  add)
+a) 000000     01001       01010       01000    00000         100000
+em hexadecimal -> 0x01484820
+
+
+  (opcode)  (rs - $zero ) (rt - $t0)     (imediato)
+b) 001000      00000        01000      0000000000010100     
+em hexadecimal -> 0x20080014
+
+
+    (opcode)  (Rs - $t0)  (Rt)    (Rd - $t0)  (shamt)    (funct -  add)
+c)   000000     01000     00000     01000      00000         000000
+em hexadecimal -> 0x00084200
+
+
+    (opcode)   (Rs - $zero)  (Rt - $t3)        (imediato)
+d)   000100       00000         01011       0000000001100100
+em hexadecimal -> 0x100b0064
+
+
+  (opcode)      (word address)
+e) 000000 0000000000000000000000011001000
+em hexadecimal -> 0x080000C8
