@@ -12,7 +12,7 @@ main:
 
 if:
     slt $t4, $zero, $t0              # verifica se $t1 é menor que $t2 e armazena o resultado em $t3
-    bne $t4, $zero, imprime       # se $t1 for menor que $t2, salte para menor
+    bne $t4, $zero, imprime          # se $t1 for menor que $t2, salte para menor
     slti $t5, $t1 , 51
     beq $t5, $zero, imprime 
 
