@@ -1,0 +1,31 @@
+Faça os seguintes produtos utilizando o algoritmo de multiplicação de inteiros sem sinal apresentado em aula. Apresente os resultados 
+apresentando cada passo do algoritmo. Considere números de 4 bits.
+
+a) 3 x 3    --> M = 3
+0000 0011  --> SOMA(A + M) DESLOCA     N=3
+0001 1001  --> SOMA(A + M) DESLOCA     N-1=2
+0100 0100  --> SOMA(A + M) DESLOCA     N-1=1
+0001 0010  --> DESLOCAMENTO
+0000 1001  -->                         N-1 = 0
+
+b) 4 x 2 
+
+ A     Q 
+0000  0100
+0000  0010  --> DESLOCAMENTO
+0000  0001  --> SOMA(A + M) E DESLOCA
+0001  0000  --> DESLOCAMENTO
+0000  1000  --> 
+
+
+c) 8 x 4 
+
+A     Q 
+0000  1000   --> DESLOCAMENTO     N-1 =3
+0000  0100   --> DESLOCAMENTO     N-1 =2
+0000  0010   --> DESLOCAMENTO     N-1 =1
+0000  0001   --> SOMA(A + M) E DESLOCA  
+0010  0000   -->                  N-1 =0
+
+
+
