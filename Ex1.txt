@@ -1,0 +1,66 @@
+Traduza os números a seguir para binário, de acordo com o formato de números com ponto flutuante apresentados em aula.
+
+os resultados devem apresentar o seguinte formato de 32 bits:
+
+Exemplo:
+
+Sinal       Expoente               Mantissa
+
+  0           00011101      10101111000000000000000
+
+A partir disso calcule:
+
+a) 37,8
+
+37,8/2   -> 18,9
+18,9/2   -> 9,45
+9,45/2   -> 4,725
+4,725/2  -> 2,3625
+2,3625/2 -> 1,18125
+
+
+1,18125*10⁵
+
+
+1,18125 - 1
+0,18125*2
+(0,3625-0)*2
+0,725*2
+1,45-1
+0,45*2
+0,9*2
+(1,8-1)*2
+1,6-1)*2
+1,2-1)*2
+
+
+R: 10010110000000000000000
+
+
+Sinal   Expoente        Mantissa
+  0     10000100    00101110000000000000000
+
+b) 90,56
+
+90,56/2    -> 45,28
+45,25/2    -> 22,64
+22,64/2    -> 11,32
+11,32/2    -> 5,66
+5,66/2     -> 2,83
+2,3/2      -> 1,415
+1,415*10⁵
+
+1,415-1
+0,415*2
+0,83-0)*2
+1,66−1
+0,66*2
+1,32-1
+0,64*2
+1,28-1
+1,12-1
+0,24 
+
+
+Sinal   Expoente        Mantissa
+  0     10000101        01010101
